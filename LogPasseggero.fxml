@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="rootLayout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="294.0" prefWidth="542.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="progetto.LogPasseggeroController">
+   <children>
+      <Pane layoutY="-3.0" prefHeight="71.0" prefWidth="542.0" style="-fx-background-color: #6699ff;">
+         <children>
+            <Text layoutX="220.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passeggero">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+         </children>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Pane>
+      <TextField fx:id="nome" layoutX="178.0" layoutY="96.0" promptText="Nome" />
+      <Button layoutX="227.0" layoutY="218.0" mnemonicParsing="false" onAction="#controllogin" text="Invia" />
+      <PasswordField fx:id="password" layoutX="178.0" layoutY="153.0" promptText="Password" />
+   </children>
+</Pane>

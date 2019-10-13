@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" fx:id="Benvenuto" prefHeight="294.0" prefWidth="542.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="progetto.BenvenutoController">
+   <children>
+      <Text layoutX="121.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Benvenuto nel Programma di Simulazione Taxi" textAlignment="CENTER" wrappingWidth="301.46044921875">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Text>
+      <Text layoutX="89.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scegli una della opzioni qui di fianco per iniziare la simulazione.">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

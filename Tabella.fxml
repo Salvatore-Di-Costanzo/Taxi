@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane fx:id="rootLayout" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="progetto.TabellaController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="294.0" prefWidth="542.0">
+         <children>
+            <TableView fx:id="table" prefHeight="251.0" prefWidth="542.0">
+              <columns>
+                <TableColumn fx:id="Passeggero" prefWidth="271.0" text="Passeggero" />
+                <TableColumn fx:id="Taxi" prefWidth="271.0" text="Taxi" />
+              </columns>
+            </TableView>
+            <Button layoutX="180.0" layoutY="257.0" mnemonicParsing="false" onAction="#iniziaViaggio" text="Accetta" />
+            <Button layoutX="318.0" layoutY="257.0" mnemonicParsing="false" onAction="#rifiutaViaggio" text="Rifiuta" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
